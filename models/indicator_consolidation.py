@@ -45,9 +45,10 @@ class IndicatorConsolidation(Model):
         if total_seconds is None:
             value = 0
         else:
-            pprint(total_seconds)
+
             value = total_seconds / (20 * 50 * 60)
-            pprint(value)
+            print(total_seconds)
+            print(value)
         return value
 
     @staticmethod
