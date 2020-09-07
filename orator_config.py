@@ -6,8 +6,8 @@ if os.getenv("ENVIRONMENT") == "development":
             "driver": "postgres",
             "host": "localhost",
             "database": "metis-data",
-            "user": "postgres",
-            "password": "password",
+            "user": "metis",
+            "password": "metis",
             "prefix": "",
         }
     }
