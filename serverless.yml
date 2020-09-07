@@ -48,4 +48,3 @@ package:
     - .python-version
     - .pre-commit-config.yaml
     - .codeclimate.yml
-
