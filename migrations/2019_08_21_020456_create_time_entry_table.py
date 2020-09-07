@@ -14,8 +14,6 @@ class CreateTimeEntryTable(Migration):
             table.foreign('member_id').references('id').on('member')
             table.integer('project_id').unsigned()
             table.foreign('project_id').references('id').on('project')
-            table.integer('activity_id').unsigned().nullable()
-            table.foreign('activity_id').references('id').on('activity')
             table.integer('client_id').unsigned()
             table.foreign('client_id').references('id').on('client')
             table.timestamp('start')
