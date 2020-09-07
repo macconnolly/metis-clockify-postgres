@@ -88,7 +88,7 @@ class IndicatorConsolidation(Model):
         prep = Indicator.where("name", "prep").first()
         intervals = cls.get_time_intervals(start, prep.frequency)
         neo_id = Client.where("name", "firm initiative").first().id
-        db.update("SET timezone='America/Eastern';")
+        db.update("SET timezone='America/New_York';")
         for interval in intervals:
             for member in Member.all():
                 value = cls.calculate_prep(
