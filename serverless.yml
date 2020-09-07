@@ -1,4 +1,4 @@
-service: neo-data
+service: metis-clockify-updater
 
 provider:
   name: aws

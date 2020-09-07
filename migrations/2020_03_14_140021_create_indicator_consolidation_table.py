@@ -14,7 +14,7 @@ class CreateIndicatorConsolidationTable(Migration):
             table.integer("member_id").unsigned()
             table.foreign("member_id").references("id").on("member")
             table.integer("indicator_id").unsigned()
-            table.foreign("indicator_id").references("id").on("indicator")
+            table.foreign("indicator_id"). ("id").on("indicator")
             table.timestamps()
 
     def down(self):
