@@ -36,7 +36,6 @@ CONFIG = {
 
 db = DatabaseManager(CONFIG)
 Model.set_connection_resolver(db)
-
 from .client import Client
 from .member import Member
 from .project import Project
