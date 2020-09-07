@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/b8c97fe0cb9760a0a19c/maintainability)](https://codeclimate.com/github/neo-empresarial/clockify-integration/maintainability)
+
 
 # Clockify Integration
 
