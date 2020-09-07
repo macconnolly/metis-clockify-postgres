@@ -25,10 +25,10 @@ CONFIG = {
     },
     "development": {
         "driver": "postgres",
-        "host": "localhost",
-        "database": "neo-data",
-        "user": "neo",
-        "password": "neoempresarial",
+        "host": "metis-data.c7l51j6b7kxo.us-east-2.rds.amazonaws.com",
+        "database": "metis-data",
+        "user": "metis",
+        "password": "metisstrategy",
         "prefix": "",
     },
 }

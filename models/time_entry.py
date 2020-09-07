@@ -103,6 +103,7 @@ class TimeEntry(Model):
         if not pd.isna(time_entry["timeInterval.end"]):
             clockify_id = time_entry["id"]
             member_id = time_entry["member_id"]
+            activity_id = "0"
             if not pd.isna(time_entry["project_id"]):
                 project_id = time_entry["project_id"]
             else:
