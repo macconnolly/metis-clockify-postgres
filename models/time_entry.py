@@ -67,8 +67,6 @@ class TimeEntry(Model):
                         "project.note",
                         "timeInterval.start",
                         "timeInterval.end",
-                        "task.id",
-                        "task.name",
                         "tags"
                     ]
                     df_te = df_te[cols_to_keep]
