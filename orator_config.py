@@ -4,10 +4,10 @@ if os.getenv("ENVIRONMENT") == "development":
     DATABASES = {
         "development": {
             "driver": "postgres",
-            "host": "localhost",
+            "host": "metis-data.c7l51j6b7kxo.us-east-2.rds.amazonaws.com",
             "database": "metis-data",
             "user": "metis",
-            "password": "metis",
+            "password": "metisstrategy",
             "prefix": "",
         }
     }
