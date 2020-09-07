@@ -27,7 +27,7 @@ class IndicatorConsolidation(Model):
     @staticmethod
     def calculate_prep(start, end, member, neo_id=None):
         if neo_id is None:
-            neo_id = Client.where("name", "neo").first().id
+            neo_id = Client.where("name", "Firm Initiative").first().id
         if member.date_deactivated is not None:
             if start >= member.date_deactivated:
                 return None
@@ -87,7 +87,7 @@ class IndicatorConsolidation(Model):
     def populate_prep(cls, start):
         prep = Indicator.where("name", "prep").first()
         intervals = cls.get_time_intervals(start, prep.frequency)
-        neo_id = Client.where("name", "neo").first().id
+        neo_id = Client.where("name", "Firm Initiative").first().id
         db.update("SET timezone='America/Sao_Paulo';")
         for interval in intervals:
             for member in Member.all():
