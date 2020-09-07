@@ -18,7 +18,7 @@ class CreateTimeEntryTable(Migration):
             table.foreign('client_id').references('id').on('client')
             table.timestamp('start')
             table.timestamp('end')
-            table.string('description').nullable()
+            table.text('description').nullable()
             table.timestamps()
 
     def down(self):
