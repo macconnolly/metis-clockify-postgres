@@ -1,5 +1,5 @@
 service: metis-clockify-updater
-
+app: metis-clockify-updater
 provider:
   name: aws
   runtime: python3.7
