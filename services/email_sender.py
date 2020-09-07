@@ -9,9 +9,9 @@ class EmailSender:
         self.recipients = emails
 
     def send(self):
-        from_email = Email("data@neo.ufsc.br", "NEO-Data mailer")
+        from_email = Email("mac.connolly@metisstrategy.co", "Metis Strategy Data Mailer")
         to_emails = self.recipients
-        subject = "(Scheduled) NEO Data has just been updated."
+        subject = "(Scheduled) MS Data has just been updated."
         mail = Mail(
             from_email,
             to_emails,
