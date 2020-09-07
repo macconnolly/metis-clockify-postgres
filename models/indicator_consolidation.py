@@ -2,6 +2,8 @@ from models import *
 from orator.orm import belongs_to
 from datetime import datetime, timedelta, time
 
+import pprint
+
 
 class IndicatorConsolidation(Model):
     __table__ = "indicator_consolidation"
@@ -38,11 +40,15 @@ class IndicatorConsolidation(Model):
             .where("start", "<=", end)
             .get()
         )
+        pprint(member.id)
+
         total_seconds = time_entries.sum(lambda te: (te.end - te.start).total_seconds())
         if total_seconds is None:
             value = 0
         else:
+            pprint(total_seconds)
             value = total_seconds / (20 * 50 * 60)
+            pprint(value)
         return value
 
     @staticmethod
