@@ -101,7 +101,7 @@ class IndicatorConsolidation(Model):
                             "end_date": interval["end"],
                             "member_id": member.id,
                             "indicator_id": prep.id,
-                            
+
                         },
                         {"value": value, "updated_at": datetime.now()},
                     )
