@@ -1,7 +1,7 @@
 import sys
 
 sys.path.append("../")
-from models import Activity, Client, Member, Project, TimeEntry, IndicatorConsolidation
+from models import Client, Member, Project, TimeEntry, IndicatorConsolidation
 
 if __name__ == "__main__":
     Member.save_from_clockify()
