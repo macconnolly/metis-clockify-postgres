@@ -124,7 +124,7 @@ class TimeEntry(Model):
                     "client_id": client_id,
                     "start": start,
                     "end": end,
-                    "description": description,
+                    "description": description
                 },
             )
         else:
