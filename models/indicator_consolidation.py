@@ -27,7 +27,7 @@ class IndicatorConsolidation(Model):
     @staticmethod
     def calculate_prep(start, end, member, neo_id=None):
         if neo_id is None:
-            neo_id = Client.where("name", "Firm Initiative").first().id
+            neo_id = Client.where("name", "prep").first().id
         if member.date_deactivated is not None:
             if start >= member.date_deactivated:
                 return None
