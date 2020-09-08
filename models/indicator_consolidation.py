@@ -46,7 +46,7 @@ class IndicatorConsolidation(Model):
             value = 0
         else:
 
-            value = total_seconds / (20 * 50 * 60)
+            value = total_seconds / (3600)
             print(total_seconds)
             print(value)
         return value
