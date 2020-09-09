@@ -35,7 +35,7 @@ class IndicatorConsolidation(Model):
                 return None
         time_entries = (
             TimeEntry.where("member_id", member.id)
-            .where("client_id", "!=", neo_id)
+            # .where("client_id", "!=", neo_id)
             .where("start", ">=", start)
             .where("start", "<=", end)
             .get()
