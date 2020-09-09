@@ -27,7 +27,7 @@ plugins:
 
 custom:
   pythonRequirements:
-    dockerizePip: true
+    dockerizePip: 'non-linux'
     usePipenv: false
     zip: true
 
