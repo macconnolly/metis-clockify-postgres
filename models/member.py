@@ -32,12 +32,13 @@ class Member(Model):
 
     @staticmethod
     def fetch_all_users():
-        """Find all users from Clockify on NEO's workspace.
+        """Find all users from Clockify on Metis's workspace.
 
         Returns list of dictionaries containing "acronym", "clockify_id" and "email"
         of every user."""
         url = "{}/workspace/{}/users".format(V1_API_URL, WORKSPACE_ID)
         responses = requests.get(url, headers=HEADERS)
+        print(responses)
         return [
             {
                 "acronym": user["name"].lower(),
