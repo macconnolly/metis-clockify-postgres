@@ -20,7 +20,7 @@ functions:
   update:
     handler: handler.update
     events:
-      - schedule: rate(12 hours)
+      - schedule: rate(1 daymd)
 
 plugins:
   - serverless-python-requirements
