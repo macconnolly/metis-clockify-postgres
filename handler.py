@@ -6,7 +6,7 @@ import json
 import datetime
 from models import *
 
-Member.save_from_clockify()
+
 
 def update(event, context):
     now = datetime.datetime.now()

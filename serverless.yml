@@ -4,7 +4,7 @@ app: metis-clockify-updater
 provider:
   name: aws
   runtime: python3.7
-  stage: prod
+  stage: production
   region: us-east-1
   timeout: 900
   environment:
@@ -21,7 +21,7 @@ functions:
   update:
     handler: handler.update
     events:
-      - schedule: rate(15 minutes)
+      - schedule: rate(1 daymd)
 
 plugins:
   - serverless-python-requirements
