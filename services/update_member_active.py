@@ -6,8 +6,8 @@ from datetime import datetime
 
 
 def main():
-    print("Type the acronyms of the members who are no longer active.")
-    print("Example: 'JNR LAB FSN PYC'")
+    print("Type the name of the members who are no longer active.")
+    print("Example: 'Mac Connolly, Roberto Irizarry'")
     acronyms = input("").lower().split(",")
     for acronym in acronyms:
         member = Member.where("acronym", acronym).first()
