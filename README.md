@@ -48,16 +48,16 @@ Now we can run commands as the PostgresSQL superuser. To create a user, type the
 
 ```
 $ createuser --interactive --pwprompt
-Enter name of role to add: neo
-Enter password for new role: neoempresarial
-Enter it again: neoempresarial
+Enter name of role to add: user1name
+Enter password for new role: user1pass
+Enter it again: user1pass
 Shall the new role be a superuser? y
 ```
 
 Then create a database with:
 
 ```bash
-$ createdb -O neo "neo-data"
+$ createdb -O neo "companydatabase"
 ```
 
 Now we must give user 'neo' the privileges needed to access the database we just created.
@@ -70,7 +70,7 @@ $ psql
 and you'll be inside the Postgres interface. Now we want to grant access to the recently created database. You can do so by running:
 
 ```bash
-GRANT ALL PRIVILEGES ON DATABASE "neo-data" TO neo;
+GRANT ALL PRIVILEGES ON DATABASE "companydatabse" TO user1name;
 ```
 inside your session. After this, if you want quit the Postgres client, simply type `\q`
 
@@ -95,3 +95,4 @@ CREATE SCHEMA public;
 ```
 
 and run the migrations and seeds again.
+
